@@ -1,51 +1,116 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+<html lang="eng">
+    <head>
+        <!--meta tags-->
+        <meta charset="utf-8"/>
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grace Michallet">
+        <meta name="description" content="Analysis on how weather changes as one gets closer to the equator.">
 
-<body>
+        <!--bootstrap ccs-->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css">
+        <title>Web Visualization Dashboard - Grace Michallet</title>
 
-  <h1>Grace Michallet</h1>
+    </head>
 
-  <img src="https://placehold.it/200x200" alt="Grace Michallet">
+    <!--body-->
 
-  <p>I am a fitness and wellness enthusiast.</p>
-  <p>I enjoy hiking.</p>
+    <!--navbar-->
+    <body>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <!-- Navbar content -->
+                    <a class="navbar-brand" href="index.html">Weather Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                          </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link " href="comparisons.html" tabindex="-1" >Comparisons</a>
+                        </li>
+                        <li class = "nav-item">
+                          <a class = "nav-link " href="data.html" tabindex="-1" >Data</a>
+                        </li>
+                        
+                        </ul>
+                      
+                    </div>
+                </nav>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">grace.michallet@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">gracemichallet</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
 
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
 
-  <!-- Bonus link to last class page -->
-  <a href="../../../../1/Activities/04-Stu_MyFirst_HTML/Solved/my-first-bonus.html">My First HTML Bonus</a>
+                <!--JUMBOTRON-->
+                <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <h1 class="display-4">Welcome To Weather Visualization Dashboard</h1><br>
+                          <p class="lead"><p>The purpose of this Dashboard is to analyze and visualize how weather changes as one gets closer to the equator.
+                                To complete this dashboard, I used data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                                I used Matplotlib to plot various aspects of the weather vs. latitude. Factors that I considered included:</br>
+                                <p>temperature, cloudiness, wind speed, and humidity. This dashboard provides the source data and visualizations, as well as explanations and observed correlations.</p>
+                              </p><br>
+                              <p class ="lead">To see each visualization, go to the Plots dropdown menu or click the images below.</p>
+                        </div>
+              
+                    </div>
+                <div class= "margin:0">
+                    <div class= "text-center">
+                    <h2 class= "main-pg-subheader">Visualizations</h2>
+                    <hr>
+                    <div class="sidebar"
+                        <a href= "temperature.html"><img id= "side-img1" src="Resources/assets/images/Fig1.png" alt= "Temp vs. Latitude Scatterplt"></a>
+                        <a href= "humidity.html"><img id= "side-img2" src= "Resources/assets/images/Fig2.png", alt= "Humidity vs. Latitude Scatterplt"></a>
+                        <a href= "cloudiness.html"><img id= "side-img3" src= "Resources/assets/images/Fig3.png", alt= "Cloudiness vs. Latitude Scatterplt"></a>
+                        <a href= "windspeed.html"><img id= "side-img4" src= "Resources/assets/images/Fig4.png", alt= "Wind Speed vs. Latitude Scatterplt"></a>
+                        </div>
+                       
 
-</body>
+                            
+
+                    <footer class="footer">
+                        <div class="container">
+                          <a href="https://github.com/gmichallet/Web-Design-Challenge" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                          </a>
+                          
+                          <a href="mailto:grace.michallet@gmail.com">
+                            <i class="fas fa-at fa-2x"></i>
+                          </a>
+                          <p class="text text-center">
+                            <small>© Copyright Grace Michallet 2021</br>
+                                © Bootcamp Data Science and Visualization</small>
+                              </p>
+                            </div>
+                          </footer>
+
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>       
+
+
 
 </html>
