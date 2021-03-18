@@ -1,0 +1,27 @@
+body {
+    background: #c8d0d1;
+    color: #555151;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    
+}
+
+
+.navbar-brand{
+	font-family: "Helvetica", serif;
+	font-weight: 800;
+	font-size: 16px;
+    margin-left: auto;
+    
+}
+
+
+
+
+footer.footer{
+	background-color:#e5ebf3;
+	border-radius: .3rem;
+	text-align: center;
+	padding: 5px 5px;
+}
